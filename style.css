@@ -1,0 +1,38 @@
+#hello {
+  background-color: blueviolet;
+}
+
+/* .container {
+  display: grid;
+} */
+
+.red {
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* margin: 10px; */
+}
+.green {
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  /* margin: 10px; */
+}
+.blue {
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* margin: 10px; */
+}
+
+.red:hover {
+  background-color: aqua;
+  cursor: cell;
+}
