@@ -186,62 +186,38 @@ firstCaps('deva viswa ganesan')
 
 //API FECTH CALL
 
-// var value;
-// function dataHandling() {
-//   console.log(value);
-//   const mainDiv = document.getElementById("main");
-//   let tabel = document.createElement("table");
-//   mainDiv.append(tabel);
-//   let keys = Object.keys(value[0]);
-//   console.log(keys);
-//   let tHead = `<tr>${keys
-//     .map((v) => {
-//       return `<td>${v}</td>`;
-//     })
-//     .join("")}</tr>`;
-//   //   console.log(tHead);
-//   const tBody = value.map((val) => {
-//     return `<tr>${keys
-//       .map((va) => {
-//         return `<td>${val[va]}</td>`;
-//       })
-//       .join("")}</tr>`;
-//   });
-//   console.log(tBody);
-//   tabel.innerHTML = tHead + tBody;
-// }
+var value;
+function dataHandling() {
+  console.log(value);
+  const mainDiv = document.getElementById("main");
+  let tabel = document.createElement("table");
+  mainDiv.append(tabel);
+  let keys = Object.keys(value[0]);
+  console.log(keys);
+  let tHead = `<tr>${keys
+    .map((v) => {
+      return `<td>${v}</td>`;
+    })
+    .join("")}</tr>`;
+  //   console.log(tHead);
+  const tBody = value.map((val) => {
+    return `<tr>${keys
+      .map((va) => {
+        return `<td>${val[va]}</td>`;
+      })
+      .join("")}</tr>`;
+  });
+  console.log(tBody);
+  tabel.innerHTML = tHead + tBody;
+}
 
-// fetch(
-//   "https://cors-anywhere.herokuapp.com/gitlab.com/gvanderput/gerard-movie-filtering/-/raw/master/data/movies.json"
-// )
-//   .then((res) => res.json())
-//   .then((data) => {
-//     // console.log(data)
-//     value = data;
-//     dataHandling();
-//   });
+fetch(
+  "https://cors-anywhere.herokuapp.com/gitlab.com/gvanderput/gerard-movie-filtering/-/raw/master/data/movies.json"
+)
+  .then((res) => res.json())
+  .then((data) => {
+    // console.log(data)
+    value = data;
+    dataHandling();
+  });
 
-// fetch(
-//   '"https://cors-anywhere.herokuapp.com/gitlab.com/gvanderput/gerard-movie-filtering/-/raw/master/data/movies.json'
-// )
-//   .then((res) => res.json())
-//   .then((res) => {
-//     console.log(res);
-//   });
-
-
-// let data;
-// function apiFetch() {
-//   console.log(data);
-  
-// }
-
-// fetch(
-//   "https://cors-anywhere.herokuapp.com/gitlab.com/gvanderput/gerard-movie-filtering/-/raw/master/data/movies.json"
-// )
-//   .then((res) => res.json())
-//   .then((res) => {
-//     // console.log(res);
-//     data = res;
-//     apiFetch();
-//   });
